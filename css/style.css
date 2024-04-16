@@ -1,7 +1,7 @@
 #grid {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-  }
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
 
 #grid ol {
   padding-left: 30px;
@@ -52,11 +52,7 @@ img {
   border: 5px pink dotted;
 }
 
-#top_tel {
-width: 20%;
-height: 20%;
 
-}
 #emblem {
   width: 20%;
   height: 20%;
@@ -80,7 +76,7 @@ height: 20%;
 
 /* Styling for form elements */
 .main_res {
-  width: 100%;
+  width: 110%;
   border-collapse: collapse;
 }
 
@@ -159,20 +155,28 @@ body {
 }
 
 .nav-link.btn {
-  padding: 8px 16px; /* 버튼의 패딩을 설정합니다. */
-  border: none; /* 버튼의 테두리를 없앱니다. */
-  border-radius: 4px; /* 버튼의 모서리를 둥글게 만듭니다. */
-  background-color:  #fff; /* 버튼의 배경색을 설정합니다. */
-  color: #000; /* 버튼의 글씨색을 설정합니다. */
-  transition: background-color 0.3s; /* 호버 효과를 추가합니다. */
+  padding: 8px 16px;
+  /* 버튼의 패딩을 설정합니다. */
+  border: none;
+  /* 버튼의 테두리를 없앱니다. */
+  border-radius: 4px;
+  /* 버튼의 모서리를 둥글게 만듭니다. */
+  background-color: #fff;
+  /* 버튼의 배경색을 설정합니다. */
+  color: #000;
+  /* 버튼의 글씨색을 설정합니다. */
+  transition: background-color 0.3s;
+  /* 호버 효과를 추가합니다. */
 }
 
 .nav-link.btn:hover {
-  background-color: #0056b3; /* 호버 시 배경색을 변경합니다. */
+  background-color: #0056b3;
+  /* 호버 시 배경색을 변경합니다. */
 }
 
 nav {
-  text-align: center; /* 가운데 정렬 */
+  text-align: center;
+  /* 가운데 정렬 */
 }
 
 nav ul {
@@ -183,7 +187,8 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 10px; /* 목록 항목 간격 조절 */
+  margin-right: 10px;
+  /* 목록 항목 간격 조절 */
 }
 
 nav ul li a {
@@ -191,30 +196,57 @@ nav ul li a {
   padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
-  color: black; /* 글자색을 검은색으로 변경 */
-  border-radius: 5px; /* 모서리를 둥글게 만듭니다. */
-  transition: background-color 0.3s ease; /* 배경색 변경에 부드러운 전환 효과 적용 */
-  font-weight: 900; /* 글꼴을 두껍게 만듭니다. */
+  color: black;
+  /* 글자색을 검은색으로 변경 */
+  border-radius: 5px;
+  /* 모서리를 둥글게 만듭니다. */
+  transition: background-color 0.3s ease;
+  /* 배경색 변경에 부드러운 전환 효과 적용 */
+  font-weight: 900;
+  /* 글꼴을 두껍게 만듭니다. */
 }
 
 nav ul li a:hover {
-  background-color: white; /* 호버 시 더 어두운 초록색으로 변경 */
+  background-color: white;
+  /* 호버 시 더 어두운 초록색으로 변경 */
 }
 
 div#solcar {
   display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    width: 15%;
-    height: auto;
+  margin: 0 auto;
+  width: 15%;
+  height: auto;
 }
 
 /* 로그인창 바로가기 링크 스타일 */
 .login-link {
-  position: absolute; /* 절대 위치 설정 */
-  top: 10px; /* 위쪽 여백 */
-  right: 10px; /* 오른쪽 여백 */
-  text-decoration: none; /* 밑줄 제거 */
-  color: white; /* 링크 색상 */
-  font-size: 20px; /* 글자 크기 설정 */
+  position: absolute;
+  /* 절대 위치 설정 */
+  top: 10px;
+  /* 위쪽 여백 */
+  right: 10px;
+  /* 오른쪽 여백 */
+  text-decoration: none;
+  /* 밑줄 제거 */
+  color: white;
+  /* 링크 색상 */
+  font-size: 20px;
+  /* 글자 크기 설정 */
+}
+
+.car_type {
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+color: white;
+}
+
+div#image_video {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+  margin: 0 auto;
+  color: white;
 }
