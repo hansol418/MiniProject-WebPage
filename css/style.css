@@ -2,57 +2,219 @@
     display: grid;
     grid-template-columns: 300px 1fr;
   }
-  
-  #grid ol {
-    padding-left: 30px;
-  }
-  
-  ol {
-    border-right: 1px solid gray;
-    width: 100px;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  #article {
-    padding-left: 20px;
-  }
-  
-  #active {
-    color: red;
-  
-  }
-  
-  .saw {
-    color: blueviolet;
-  }
-  
-  /* 3x3 사진첩 꾸미기 */
-  .grid_pictures {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(4, 1fr);
-    /* 그리드 내부에서의 행, 열에 여백 주기.  */
-    column-gap: 20px;
-    row-gap: 20px;
-  }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .picture_container {
-    border: 5px pink dotted ;
-  }
 
-  #emblem {
-    width: 20%;
-    height: 20%;
-  }
+#grid ol {
+  padding-left: 30px;
+}
+
+ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#article {
+  padding-left: 20px;
+}
+
+#active {
+  color: red;
+
+}
+
+.saw {
+  color: blueviolet;
+}
+
+/* 3x3 사진첩 꾸미기 */
+.grid_pictures {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+  /* 그리드 내부에서의 행, 열에 여백 주기.  */
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.picture_container {
+  border: 5px pink dotted;
+}
+
+#top_tel {
+width: 20%;
+height: 20%;
+
+}
+#emblem {
+  width: 20%;
+  height: 20%;
+}
+
+/* #grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+} */
+
+#left_res {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  /* Limiting the maximum width */
+  margin: 0 auto;
+  /* Centering the container */
+}
+
+/* Styling for form elements */
+.main_res {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main_res td {
+  padding: 5px;
+  /* Reduced padding */
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  /* Aligning text to the left */
+}
+
+.main_res .thead {
+  font-weight: bold;
+}
+
+.main_res .tform input,
+.main_res .tform select {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mid_line {
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+/* Styling for the agreement box */
+#main_info_box {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#main_info_agree {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#main_info_check {
+  margin-top: 10px;
+}
+
+/* Styling for the submit button */
+.tcen {
+  text-align: center;
+}
+
+.res_submit {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.res_submit:hover {
+  background-color: #45a049;
+}
+
+body {
+  background-image: url('../backgrounImage.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-link.link-body-emphasis {
+  font-weight: bold;
+}
+
+.nav-link.btn {
+  padding: 8px 16px; /* 버튼의 패딩을 설정합니다. */
+  border: none; /* 버튼의 테두리를 없앱니다. */
+  border-radius: 4px; /* 버튼의 모서리를 둥글게 만듭니다. */
+  background-color:  #fff; /* 버튼의 배경색을 설정합니다. */
+  color: #000; /* 버튼의 글씨색을 설정합니다. */
+  transition: background-color 0.3s; /* 호버 효과를 추가합니다. */
+}
+
+.nav-link.btn:hover {
+  background-color: #0056b3; /* 호버 시 배경색을 변경합니다. */
+}
+
+nav {
+  text-align: center; /* 가운데 정렬 */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px; /* 목록 항목 간격 조절 */
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black; /* 글자색을 검은색으로 변경 */
+  border-radius: 5px; /* 모서리를 둥글게 만듭니다. */
+  transition: background-color 0.3s ease; /* 배경색 변경에 부드러운 전환 효과 적용 */
+  font-weight: 900; /* 글꼴을 두껍게 만듭니다. */
+}
+
+nav ul li a:hover {
+  background-color: white; /* 호버 시 더 어두운 초록색으로 변경 */
+}
+
+div#solcar {
+  display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 15%;
+    height: auto;
+}
+
+/* 로그인창 바로가기 링크 스타일 */
+.login-link {
+  position: absolute; /* 절대 위치 설정 */
+  top: 10px; /* 위쪽 여백 */
+  right: 10px; /* 오른쪽 여백 */
+  text-decoration: none; /* 밑줄 제거 */
+  color: white; /* 링크 색상 */
+  font-size: 20px; /* 글자 크기 설정 */
+}
