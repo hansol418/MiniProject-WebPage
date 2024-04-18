@@ -35,9 +35,7 @@ a {
 
 }
 
-.saw {
-  color: blueviolet;
-}
+
 
 /* 3x3 사진첩 꾸미기 */
 .grid_pictures {
@@ -67,11 +65,7 @@ img {
   height: 20%;
 }
 
-/* #grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-} */
+
 
 #left_res {
   background-color: #f9f9f9;
